@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stained Glass Low-Poly — Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <script src="site.js"></script>
+
+  <main class="container demo-page">
+    <section class="controls">
+      <label class="file">
+        Upload image
+        <input id="fileInput" type="file" accept="image/*" />
+      </label>
+
+      <div class="control">
+        <label>Point count <span id="pointsCountLabel">1000</span></label>
+        <input id="pointsRange" type="range" min="100" max="5000" step="10" value="1000" />
+      </div>
+
+      <div class="control">
+        <label>Edge bias <span id="edgeBiasLabel">60%</span></label>
+        <input id="edgeBiasRange" type="range" min="0" max="100" step="1" value="60" />
+      </div>
+
+      <div class="control">
+        <label>Edge threshold <span id="edgeThresholdLabel">20</span></label>
+        <input id="edgeThresholdRange" type="range" min="0" max="255" step="1" value="20" />
+      </div>
+
+      <div class="control">
+        <label>Stroke width <span id="strokeWidthLabel">1</span></label>
+        <input id="strokeWidthRange" type="range" min="0" max="6" step="0.1" value="1" />
+      </div>
+
+      <div class="control">
+        <label>Stroke color</label>
+        <input id="strokeColor" type="color" value="#222222" />
+      </div>
+
+      <div class="buttons">
+        <button id="generateBtn" disabled>Generate</button>
+        <button id="downloadSVGBtn" disabled>Download SVG</button>
+        <button id="downloadPNGBtn" disabled>Download PNG</button>
+      </div>
+
+      <div class="note">Tip: increase edge bias to get sharper piece shapes around edges. Adjust point count for granularity.</div>
+    </section>
+
+    <section class="preview">
+      <div id="status">No image loaded</div>
+      <div id="previewContainer" class="previewInner"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Interactive demo: Stained Glass Low-Poly.</small>
+  </footer>
+
+  <!-- Delaunator (UMD) via unpkg; used for fast triangulation -->
+  <script src="https://unpkg.com/delaunator@5.0.0/delaunator.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

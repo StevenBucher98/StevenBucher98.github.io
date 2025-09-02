@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "2025-09-01-welcome",
+    "title": "Welcome to my blog",
+    "date": "2025-09-01",
+    "summary": "A short welcome note about this blog and site.",
+    "tags": ["intro"],
+    "file": "content/posts/2025-09-01-welcome.md"
+  }
+]

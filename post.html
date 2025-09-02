@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Post — Steven Bucher</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <script src="site.js"></script>
+  <main class="site-main">
+    <section class="section">
+      <div id="postContainer"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    // parse frontmatter and markdown
+    function parseFrontMatter(text){
+      if (text.startsWith('---')){
+        const end = text.indexOf('\n---', 3);
+        if (end !== -1){
+          const fmText = text.slice(3, end+1).trim();
+          const rest = text.slice(end+4).trim();
+          const lines = fmText.split(/\r?\n/);
+          const fm = {};
+          lines.forEach(line => {
+            const idx = line.indexOf(':');
+            if (idx !== -1){
+              const key = line.slice(0, idx).trim();
+              let val = line.slice(idx+1).trim();
+              // try JSON parse for arrays
+              if (val.startsWith('[') || val.startsWith('{')){
+                try { val = JSON.parse(val); } catch(e){}
+              }
+              // strip wrapping quotes
+              if (typeof val === 'string' && ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith('\'') && val.endsWith('\'')))){
+                val = val.slice(1, -1);
+              }
+              fm[key] = val;
+            }
+          });
+          return { frontmatter: fm, content: rest };
+        }
+      }
+      return { frontmatter:{}, content:text };
+    }
+
+    async function init(){
+      const params = new URLSearchParams(location.search);
+      const slug = params.get('slug');
+      if (!slug) return document.getElementById('postContainer').innerHTML = '<p class="muted">No post specified.</p>';
+      try{
+        // try to find meta in data/posts.json
+        const metaRes = await fetch('data/posts.json');
+        const posts = await metaRes.json();
+        const meta = posts.find(p=>p.slug===slug) || {};
+
+        const mdRes = await fetch('content/posts/' + slug + '.md');
+        const mdText = await mdRes.text();
+        const parsed = parseFrontMatter(mdText);
+        const html = marked.parse(parsed.content);
+        const container = document.getElementById('postContainer');
+        container.innerHTML = `
+          <article class="card">
+            <h1>${meta.title || parsed.frontmatter.title || 'Untitled'}</h1>
+            <p class="muted">${meta.date || parsed.frontmatter.date || ''}</p>
+            <div class="post-body">${html}</div>
+          </article>
+        `;
+      }catch(e){ console.error(e); document.getElementById('postContainer').innerHTML = '<p class="muted">Failed to load post.</p>'; }
+    }
+    init();
+  </script>
+</body>
+</html>

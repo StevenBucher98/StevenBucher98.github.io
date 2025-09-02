@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Stained Glass Low-Poly",
+    "slug": "stained-glass",
+    "summary": "Interactive tool that converts photos to low-poly SVGs for stained glass patterns.",
+    "image": "",
+    "page": "projects/stained-glass/index.html",
+    "date": "2025-09-01",
+    "tags": ["interactive","svg","tool"]
+  }
+]
