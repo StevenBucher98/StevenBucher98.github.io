@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Steven Bucher — Portfolio</title>
+  <title>Steven's Place — Ideas, Presentations & Projects</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,28 +14,68 @@
   <main class="site-main">
     <section class="hero">
       <div class="hero-inner">
-        <h1>Steven Bucher</h1>
-        <p class="hero-sub">A place for me to dump projects and random ideas</p>
+        <div class="hero-badge">Welcome to</div>
+        <h1 class="hero-title">
+          <span class="hero-accent">Steven's</span>
+          <span class="hero-main">Place</span>
+        </h1>
+        <p class="hero-tagline">Ideas, Presentations & Projects</p>
+        <p class="hero-description">
+          Just a place for me to dump ideas, consolidate my presentations, and share some fun projects I want to work on.
+        </p>
         <div class="hero-ctas">
-          <a class="btn" href="projects.html">View projects</a>
-          <a class="btn outline" href="blog.html">Read blog</a>
+          <a class="btn" href="projects.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9h18M9 21V9"/>
+            </svg>
+            Explore Projects
+          </a>
+          <a class="btn outline" href="presentations.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            Watch Talks
+          </a>
+          <a class="btn outline" href="blog.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+            Read Blog
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">9+</div>
+            <div class="stat-label">Conference Talks</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Ideas Brewing</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Passion Driven</div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="featured-projects">
-      <h2>Featured projects</h2>
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p class="section-subtitle">Things I'm building</p>
+      </div>
       <div id="projectsGrid" class="grid"></div>
     </section>
 
     <section class="section" id="featured-posts">
-      <h2>Latest posts</h2>
+      <div class="section-header">
+        <h2>Latest Thoughts</h2>
+        <p class="section-subtitle">Random musings</p>
+      </div>
       <div id="postsList" class="list"></div>
-    </section>
-
-    <section class="section about-me">
-      <h2>About</h2>
-      <p class="muted">I've always wanted a website but hated web development with a passion and now with vibecoding its become far easier and more fun to create a webpage fast and easily. This is a place for random ideas and projects that I find interesting.</p>
     </section>
 
   </main>

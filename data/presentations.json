@@ -1,0 +1,111 @@
+[
+  {
+    "id": "1",
+    "title": "AI Shell by Steven Bucher",
+    "description": "PowerShell.org presentation on AI Shell",
+    "date": "2024-07-15",
+    "type": "youtube",
+    "url": "https://youtu.be/7LhDdjbLMOQ",
+    "embedUrl": "https://www.youtube.com/embed/7LhDdjbLMOQ",
+    "thumbnail": "https://img.youtube.com/vi/7LhDdjbLMOQ/maxresdefault.jpg",
+    "relevance": 5
+  },
+  {
+    "id": "2",
+    "title": "Shell Enhancements by Steven Bucher",
+    "description": "PowerShell.org presentation on shell enhancements",
+    "date": "2024-07-10",
+    "type": "youtube",
+    "url": "https://youtu.be/KyPQ6-Khu5Y",
+    "embedUrl": "https://www.youtube.com/embed/KyPQ6-Khu5Y",
+    "thumbnail": "https://img.youtube.com/vi/KyPQ6-Khu5Y/maxresdefault.jpg",
+    "relevance": 4
+  },
+  {
+    "id": "3",
+    "title": "The PowerShell Podcast E128 Interactive Shell Sessions and Language Models",
+    "description": "PDQ podcast featuring Steven Bucher discussing interactive shell sessions and language models",
+    "date": "2024-09-20",
+    "type": "youtube",
+    "url": "https://youtu.be/2n1fpuPn-pk",
+    "embedUrl": "https://www.youtube.com/embed/2n1fpuPn-pk",
+    "thumbnail": "https://img.youtube.com/vi/2n1fpuPn-pk/maxresdefault.jpg",
+    "relevance": 3
+  },
+  {
+    "id": "4",
+    "title": "PowerShell Tooling by Steven Bucher",
+    "description": "PowerShell.org presentation on PowerShell tooling",
+    "date": "2024-07-08",
+    "type": "youtube",
+    "url": "https://youtu.be/LyXZ6Q1CiW0",
+    "embedUrl": "https://www.youtube.com/embed/LyXZ6Q1CiW0",
+    "thumbnail": "https://img.youtube.com/vi/LyXZ6Q1CiW0/maxresdefault.jpg",
+    "relevance": 3
+  },
+  {
+    "id": "5",
+    "title": "SSH and SSH Arc: What's new and next - PSConfEU 2025",
+    "description": "Steven Bucher & Tess Gauthier present at PowerShell Conference EU 2025",
+    "date": "2025-06-10",
+    "type": "youtube",
+    "url": "https://youtu.be/_jpxm_TD_wU",
+    "embedUrl": "https://www.youtube.com/embed/_jpxm_TD_wU",
+    "thumbnail": "https://img.youtube.com/vi/_jpxm_TD_wU/maxresdefault.jpg",
+    "relevance": 3
+  },
+  {
+    "id": "6",
+    "title": "Creating Intuitive AI Agents for PowerShell - PowerShell Summit 2025",
+    "description": "Mike Nelson and Steven Bucher present at PowerShell Summit 2025",
+    "date": "2025-04-15",
+    "type": "youtube",
+    "url": "https://youtu.be/RVSPWTknLe0",
+    "embedUrl": "https://www.youtube.com/embed/RVSPWTknLe0",
+    "thumbnail": "https://img.youtube.com/vi/RVSPWTknLe0/maxresdefault.jpg",
+    "relevance": 2
+  },
+  {
+    "id": "7",
+    "title": "Mastering AI Shell and dive into AI Operations - PSConfEU 2025",
+    "description": "Steven Bucher presents at PowerShell Conference EU 2025",
+    "date": "2025-06-11",
+    "type": "youtube",
+    "url": "https://youtu.be/xPZYZQb2qZM",
+    "embedUrl": "https://www.youtube.com/embed/xPZYZQb2qZM",
+    "thumbnail": "https://img.youtube.com/vi/xPZYZQb2qZM/maxresdefault.jpg",
+    "relevance": 2
+  },
+  {
+    "id": "8",
+    "title": "Shell and A.I - PSConfEU 2024",
+    "description": "Steven Bucher presents at PowerShell Conference EU 2024",
+    "date": "2024-06-15",
+    "type": "youtube",
+    "url": "https://youtu.be/ihbPPPiQBCE",
+    "embedUrl": "https://www.youtube.com/embed/ihbPPPiQBCE",
+    "thumbnail": "https://img.youtube.com/vi/ihbPPPiQBCE/maxresdefault.jpg",
+    "relevance": 2
+  },
+  {
+    "id": "9",
+    "title": "State of the Shell - Steven Bucher and the PowerShell Team - PSConfEU 2025",
+    "description": "Steven Bucher and PowerShell Team present at PowerShell Conference EU 2025",
+    "date": "2025-06-12",
+    "type": "youtube",
+    "url": "https://youtu.be/XOpLLyytZcc",
+    "embedUrl": "https://www.youtube.com/embed/XOpLLyytZcc",
+    "thumbnail": "https://img.youtube.com/vi/XOpLLyytZcc/maxresdefault.jpg",
+    "relevance": 2
+  },
+  {
+    "id": "10",
+    "title": "Enhancing your CLI with the AI Shell and Copilot in Azure",
+    "description": "Microsoft Ignite presentation on enhancing CLI with AI Shell and Copilot in Azure",
+    "date": "2024-11-21",
+    "type": "ignite",
+    "url": "https://ignite.microsoft.com/en-US/archives/0179d0b8-a919-494b-8e09-75c5ed86c250",
+    "thumbnail": "images/AIShell_Ignite2024_Thumbnail.jpg",
+    "relevance": 2
+  }
+]

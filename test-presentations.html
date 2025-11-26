@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Test Presentations</title>
+</head>
+<body>
+  <h1>Debug Presentations</h1>
+  <div id="debug"></div>
+  <div id="presentations-container"></div>
+  
+  <script>
+    async function test() {
+      const debug = document.getElementById('debug');
+      try {
+        debug.innerHTML = 'Fetching data...<br>';
+        const response = await fetch('data/presentations.json');
+        debug.innerHTML += 'Response received: ' + response.status + '<br>';
+        const data = await response.json();
+        debug.innerHTML += 'Data parsed: ' + JSON.stringify(data, null, 2) + '<br>';
+        debug.innerHTML += 'Number of presentations: ' + data.length + '<br>';
+        
+        // Try to render
+        const container = document.getElementById('presentations-container');
+        data.forEach(p => {
+          const div = document.createElement('div');
+          div.innerHTML = '<h3>' + p.title + '</h3><p>' + p.description + '</p>';
+          container.appendChild(div);
+        });
+      } catch (error) {
+        debug.innerHTML += 'Error: ' + error.message + '<br>';
+      }
+    }
+    
+    test();
+  </script>
+</body>
+</html>

@@ -8,62 +8,26 @@
 </head>
 <body>
   <script src="site.js"></script>
+  <script src="presentations.js"></script>
   <main class="site-main">
     <section class="section">
       <h1>Presentations</h1>
-      <p class="muted">Video recordings of presentations I’ve given — recordings from conferences, meetups and online talks.</p>
+      <p class="muted">Video recordings of presentations I've given — recordings from conferences, meetups and online talks.</p>
 
-      <div class="presentations-list">
-
-        <div class="presentation-item card" style="max-width:1100px; margin:0 auto 28px;">
-          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-            <iframe src="https://www.youtube.com/embed/bnHsUcu-Li8" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="presentations-controls">
+        <div class="control-group">
+          <label>Sort by:</label>
+          <div class="button-group">
+            <button class="sort-btn active" data-sort="newest">Newest First</button>
+            <button class="sort-btn" data-sort="oldest">Oldest First</button>
           </div>
-          <p class="muted"><a href="https://youtu.be/bnHsUcu-Li8" target="_blank" rel="noopener">Watch on YouTube</a></p>
         </div>
+      </div>
 
-        <div class="presentation-item card" style="max-width:1100px; margin:0 auto 28px;">
-          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-            <iframe src="https://www.youtube.com/embed/7LhDdjbLMOQ" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <p class="muted"><a href="https://youtu.be/7LhDdjbLMOQ" target="_blank" rel="noopener">Watch on YouTube</a></p>
-        </div>
+      <p id="presentation-count" class="muted" style="margin-top: 16px;"></p>
 
-        <div class="presentation-item card" style="max-width:1100px; margin:0 auto 28px;">
-          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-            <iframe src="https://www.youtube.com/embed/KyPQ6-Khu5Y" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <p class="muted"><a href="https://youtu.be/KyPQ6-Khu5Y" target="_blank" rel="noopener">Watch on YouTube</a></p>
-        </div>
-
-        <div class="presentation-item card" style="max-width:1100px; margin:0 auto 28px;">
-          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-            <iframe src="https://www.youtube.com/embed/Hb2eB0gWsRI" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <p class="muted"><a href="https://youtu.be/Hb2eB0gWsRI" target="_blank" rel="noopener">Watch on YouTube</a></p>
-        </div>
-
-        <div class="presentation-item card" style="max-width:1100px; margin:0 auto 28px;">
-          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-            <iframe src="https://www.youtube.com/embed/xPZYZQb2qZM" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <p class="muted"><a href="https://youtu.be/xPZYZQb2qZM" target="_blank" rel="noopener">Watch on YouTube</a></p>
-        </div>
-
-        <div class="presentation-item card" style="max-width:1100px; margin:0 auto 28px;">
-          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-            <iframe src="https://www.youtube.com/embed/RVSPWTknLe0" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <p class="muted"><a href="https://youtu.be/RVSPWTknLe0" target="_blank" rel="noopener">Watch on YouTube</a></p>
-        </div>
-
-        <div class="presentation-item card" style="max-width:1100px; margin:0 auto 28px;">
-          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-            <iframe src="https://www.youtube.com/embed/_jpxm_TD_wU" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <p class="muted"><a href="https://youtu.be/_jpxm_TD_wU" target="_blank" rel="noopener">Watch on YouTube</a></p>
-        </div>
-
+      <div id="presentations-container" class="presentations-list">
+        <p class="muted">Loading presentations...</p>
       </div>
 
     </section>
