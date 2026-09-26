@@ -8,8 +8,8 @@
 </head>
 <body>
   <script src="site.js"></script>
-  <main class="site-main">
-    <section class="section">
+  <main class="site-main" id="main-content">
+    <section class="article">
       <div id="postContainer"></div>
     </section>
   </main>
@@ -63,9 +63,10 @@
         const html = marked.parse(parsed.content);
         const container = document.getElementById('postContainer');
         container.innerHTML = `
-          <article class="card">
+          <article class="article-card">
+            <div class="eyebrow">Blog</div>
             <h1>${meta.title || parsed.frontmatter.title || 'Untitled'}</h1>
-            <p class="muted">${meta.date || parsed.frontmatter.date || ''}</p>
+            <time>${meta.date || parsed.frontmatter.date || ''}</time>
             <div class="post-body">${html}</div>
           </article>
         `;
