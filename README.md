@@ -1,14 +1,11 @@
 
-# Steven Bucher Website
+# Steven Bucher
 
-A personal website project showcasing my work and professional presence.
+A lightweight personal website for writing, recorded talks, professional experience, and contact links.
 
-## Overview
+## Site sections
 
-This repository contains the source code for my personal website. The site serves as a portfolio and online presence to share my projects, experience, and interests.
-
-## Features
-
-- Clean, modern design
-- Responsive layout for all devices
-- Easy to maintain and update
+- Blog posts authored in Markdown
+- Videos and conference talks loaded from JSON
+- Resume and contact pages
+- Responsive light and dark themes
